@@ -1,0 +1,25 @@
+{
+  "mark": {
+    //all
+  },
+  "spaceTime": {
+    //all
+  },
+  "extend": {
+  },
+  "proprietary": {
+    "nodes": ["aae","building","construction","device","itEqu","legalPD","mountain","naturalPD","other","otherBuilding","otherManagement","vehicle","water"]
+  },
+  "ability": {
+    //all
+  },
+  "geometry": {
+    //all
+  },
+  "state": {
+    //all
+  },
+  "relationship": {
+    //all
+  }
+}

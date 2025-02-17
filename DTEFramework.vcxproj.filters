@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\dataStructure">
+      <UniqueIdentifier>{9442d78c-29d2-481c-8734-4b2044292055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\dataStructure">
+      <UniqueIdentifier>{61738d17-d360-4937-a772-29ecf1db0b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\dataStructure\attribute">
+      <UniqueIdentifier>{ff3b2d03-9f6d-4cc4-bf73-0da8bcf2b5d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\context">
+      <UniqueIdentifier>{5158d073-fdb2-4fb6-b8e1-a9305a847cce}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\dte.h">
+      <Filter>头文件\dataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\context\dteContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\defs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\context\importer\dteImporter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\context\exporter\dteExporter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\attribute.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\identityAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\spaceAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\abilityAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\extensionAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\properAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\geoAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\attrs\statusAttr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\relations\relation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\relations\combineRelation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\relations\includeRelation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\context\importer\apiImporter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\dataStructrue\dteCollection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dteFramework\context\Converter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dataStructrue\dte.cpp">
+      <Filter>源文件\dataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\dteContext.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dataStructrue\attribute.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\apiImporter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils\dteExporter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\resource\apiContext.json" />
+  </ItemGroup>
+</Project>

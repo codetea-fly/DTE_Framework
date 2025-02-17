@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地图初始化</title>
+    <script src="../sip.webgl.min.js"></script>
+    <script src="echarts.js"></script>
+    <style>
+        * {
+          padding: 0;
+          margin: 0;
+        }
+    
+        .map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+        }
+    
+        .btns {
+          height: 20px;
+          position: absolute;
+          z-index: 1000;
+          top: 0;
+          left: 0;
+        }
+    
+        .btns button {
+          margin: 10px 5px;
+          padding: 10px 10px;
+          background: #00000080;
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+          color: #fff;
+          border: 0;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <div id="map" class="map"></div>
+    <div id="charts" style="width: 600px;height: 400px;"></div>
+    <div class="btns">
+      <button onclick="highLight()">高亮</button>
+    </div>
+  </body>
+  
+  <script type="text/javascript">
+    let scene = new SIP.Scene({
+      container: 'map',
+      center: [120.724647845195, 31.2654955528546],
+      zoom: 19,
+      pitch: 76,
+      exposure:2,
+      userId:'b5a0a24b680d9bcc4bf398696bc3e37533bfd8db5dbc7ef2b88beec0f0d9c6a3', // 授权码
+    })
+
+    let model = undefined;
+    let model2 = undefined;
+    scene.on('load', function(){
+        let object1 = new SIP.DataSource.Model('o1',{
+            url:'./772517414894982a8d8783b4ddd77e20.glb',
+            dracoUrl:'./',
+            coords:[120.724647845195, 31.2654955528546],
+            outline:true
+        })
+        let object2 = new SIP.DataSource.Model('o2',{
+            url:'./7fe4e162f5cfcc18eb005bee9dd63eb2.glb',
+            dracoUrl:'./',
+            coords:[120.724647845195, 31.2654955528546],
+            outline:true
+        })
+        scene.addObject(object1);
+        scene.addObject(object2);
+        object1.ready((twinModel) => {
+          model = twinModel;
+        })
+        object2.ready((twinModel) => {
+          model2 = twinModel;
+        })
+    })
+
+    
+    function highLight() {
+      if(model) {
+        model.highLight();
+      }
+    }
+
+    var myChart = echarts.init(document.getElementById('charts'));
+        var option = {
+          title: {
+            text: '关系示例'
+          },
+          tooltip: {},
+          animationDurationUpdate: 1500,
+          animationEasingUpdate: 'quinticInOut',
+          series: [
+            {
+              type: 'graph',
+              symbolSize: 50,
+              roam: true,
+              focusNodeAdjacency:true,
+              force:{
+                repulsion:200,
+                edgeLength:[120,100]
+              },
+              layout:'circular',
+              label: {
+                show: true
+              },
+              edgeSymbol: ['circle', 'arrow'],
+              edgeSymbolSize: [4, 10],
+              edgeLabel: {
+                normal: {
+                  show:true,
+                  textStyle:{
+                    fontSize: 20
+                  },
+                  formatter:function(p) {
+                    return p.data.category;
+                  }
+                }
+              },
+              data: [
+                {
+                  name: '国科机房外观',
+                  draggable:true,
+                  model: 'o1',
+                  // x: 300,
+                  // y: 300
+                  itemStyle:{
+                    // color: '#ff0000'
+                  }
+                },
+                {
+                  name: '四楼',
+                  draggable:true,
+                  model:'o2',
+                  // x: 800,
+                  // y: 300
+                  itemStyle:{
+                    color: 'skyblue'
+                  }
+                },
+              ],
+              // links: [],
+              links: [
+                {
+                  source: 0,
+                  target: 1,
+                  symbolSize: [5, 20],
+                  label: {
+                    show: true
+                  },
+                  lineStyle: {
+                    width: 1,
+                    curveness: 0.2
+                  },
+                  category:'包含'
+                },
+                
+              ],
+              lineStyle: {
+                opacity: 0.9,
+                width: 2,
+                curveness: 0
+              }
+            }
+          ]
+        };
+        myChart.setOption(option);
+        myChart.on('click',{dataType:'node'}, function(params) {
+          scene.getObject(params.data.model).ready((twinModel) => {
+            twinModel.highLight();
+          })
+        });    
+
+  </script>
+</html>

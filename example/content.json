@@ -1,0 +1,365 @@
+﻿{
+
+  "success": true,
+
+  "message": "操作成功！",
+
+  "code": 200,
+
+  "result": [
+
+    {
+
+      "importTime": "2023-09-09 09:29:39",
+
+      "notes": null,
+
+      "sourceId": null,
+
+      "twinId": "1272569081094213632",
+
+      "twinName": "四楼",
+
+      "extend": null,
+
+      "spaceTime": {
+
+        "altitude": 0,
+
+        "createTime": "2024-07-22",
+
+        "crs": "国家2000",
+
+        "destroyTime": null,
+
+        "latitude": 31.2654955528546,
+
+        "longitude": 120.724647845195,
+
+        "updateTime": null
+
+      },
+
+      "proprietary": {
+
+        "building": null,
+
+        "otherBuilding": {
+
+          "name": "四楼",
+
+          "primaryUse": "机房",
+
+          "structureType": ""
+
+        },
+
+        "aae": null,
+
+        "device": null,
+
+        "water": null,
+
+        "mountain": null,
+
+        "construction": null,
+
+        "otherManagement": null,
+
+        "itEqu": null,
+
+        "vehicle": null,
+
+        "naturalPD": null,
+
+        "legalPD": null,
+
+        "other": null
+
+      },
+
+      "mark": {
+
+        "twinCode": "DAD2024081206512400000002",
+
+        "basicTypeCode": "建筑物与人工构筑物",
+
+        "twinTypeCode": "其他建筑物",
+
+        "industryTypeCode": null
+
+      },
+
+      "ability": null,
+
+      "geometry": [
+
+        {
+
+          "twinModelSize": 1.76,
+
+          "importTime": null,
+
+          "twinModelArea": 173.649993896484,
+
+          "twinModelCreateTime": null,
+
+          "twinModelDestroyTime": null,
+
+          "twinModelFilePath": "",
+
+          "twinModelFormat": "glb",
+
+          "twinModelHeight": 3.03999996185303,
+
+          "twinModelId": null,
+
+          "twinModelLength": 57.2099990844727,
+
+          "twinModelLod": null,
+
+          "twinModelName": "国科大楼-建筑主体（无机柜机架-四层2）",
+
+          "twinModelType": "三维精模",
+
+          "twinModelUrl": "http://172.23.25.12/models/7fe4e162f5cfcc18eb005bee9dd63eb2.glb",
+
+          "twinModelWidth": 73.2900009155273,
+
+          "notes": null
+
+        }
+
+      ],
+
+      "relationship": [
+
+        {
+
+          "importTime": null,
+
+          "notes": null,
+
+          "relationCode": "010105",
+
+          "relationDesc": "四楼-包含于-国科机房建筑外观",
+
+          "relationId": null,
+
+          "relationName": null,
+
+          "relationTwinId": null
+
+        }
+
+      ],
+
+      "state": null
+
+    },
+
+    {
+
+      "importTime": "2024-12-20 15:40:06",
+
+      "notes": null,
+
+      "sourceId": null,
+
+      "twinId": "1272568269563498496",
+
+      "twinName": "国科机房建筑外观",
+
+      "extend": null,
+
+      "spaceTime": {
+
+        "altitude": 0,
+
+        "createTime": "2024-08-08",
+
+        "crs": "国家2000",
+
+        "destroyTime": null,
+
+        "latitude": 31.2654955528546,
+
+        "longitude": 120.724647845195,
+
+        "updateTime": null
+
+      },
+
+      "proprietary": {
+
+        "building": {
+
+          "name": "国科机房建筑外观",
+
+          "shortName": "",
+
+          "floors": "0",
+
+          "supervisionCompany": "",
+
+          "ownerCompany": "",
+
+          "expectedServiceLife": null,
+
+          "structureSafetyLevel": "",
+
+          "securityCheckType": "",
+
+          "fireResistanceLevel": "",
+
+          "fireproofEnduranceRating": "",
+
+          "areaAboveGround": 0,
+
+          "areaUnderGround": 0,
+
+          "mainEntrance": "",
+
+          "greenBuildingLevel": "",
+
+          "elevatorNums": "",
+
+          "barrierFreeAccessibility": "",
+
+          "openTime": "",
+
+          "earthquakeResistanceLevel": "",
+
+          "administrativeDivisionCode": "A003",
+
+          "administrativeDivisionLevel": "Level7",
+
+          "administrativeDivisionName": "江苏省苏州市",
+
+          "buildingHighestHeight": 25.75,
+
+          "buildingLandArea": 15000,
+
+          "buildingTotalArea": 57387.51,
+
+          "computedFARArea": 32219.07,
+
+          "constructionBuildingNumber": "",
+
+          "constructionCompany": "苏州工业园区科技发展有限公司",
+
+          "constructionYear": null,
+
+          "exemptedFARArea": 25168.44,
+
+          "floorsAboveGround": 4,
+
+          "floorsUnderGround": 2,
+
+          "landParcelId": "",
+
+          "landuse": "商业服务业设施用地B",
+
+          "location": "星湖街328号",
+
+          "parcelId": "",
+
+          "primaryUse": "商场",
+
+          "publicSecurityBuildingNumber": "",
+
+          "structureType": ""
+
+        },
+
+        "otherBuilding": null,
+
+        "aae": null,
+
+        "device": null,
+
+        "water": null,
+
+        "mountain": null,
+
+        "construction": null,
+
+        "otherManagement": null,
+
+        "itEqu": null,
+
+        "vehicle": null,
+
+        "naturalPD": null,
+
+        "legalPD": null,
+
+        "other": null
+
+      },
+
+      "mark": {
+
+        "twinCode": "DAD2024122015400600000001",
+
+        "basicTypeCode": "建筑物与人工构筑物",
+
+        "twinTypeCode": "多层建筑",
+
+        "industryTypeCode": null
+
+      },
+
+      "ability": null,
+
+      "geometry": [
+
+        {
+
+          "twinModelSize": 3.92,
+
+          "importTime": null,
+
+          "twinModelArea": 2310.09008789063,
+
+          "twinModelCreateTime": "2024-12-19T16:00:00.000+00:00",
+
+          "twinModelDestroyTime": null,
+
+          "twinModelFilePath": "",
+
+          "twinModelFormat": "glb",
+
+          "twinModelHeight": 27.0400009155273,
+
+          "twinModelId": null,
+
+          "twinModelLength": 85.4400024414063,
+
+          "twinModelLod": null,
+
+          "twinModelName": "国科大楼-建筑主体（无机柜机架2）",
+
+          "twinModelType": "三维精模",
+
+          "twinModelUrl": "http://172.23.25.12/models/772517414894982a8d8783b4ddd77e20.glb",
+
+          "twinModelWidth": 76.870002746582,
+
+          "notes": null
+
+        }
+
+      ],
+
+      "relationship": null,
+
+      "state": null
+
+    }
+
+  ],
+
+  "timestamp": 1735009365589
+
+}
